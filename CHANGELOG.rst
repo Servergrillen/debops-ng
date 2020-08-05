@@ -93,6 +93,16 @@ General
   :ref:`debops.global_handlers` role to allow for easier cross-role handler
   notification. The role has been imported in roles that rely on the handlers.
 
+- The :command:`debops` Python scripts have been completely rewritten and
+  reorganized. The UI has been redesigned to use subcommands rather than
+  separate scripts. This pans the way for easy extension of the script
+  functionality in the future and improvements for various tasks done on the
+  Ansible Controller.
+
+  .. note:: New set of :command:`debops` scripts is currently in development on
+            the ``master`` branch of the DebOps monorepo. Install the PyPI
+            package for a working version.
+
 LDAP
 ''''
 
