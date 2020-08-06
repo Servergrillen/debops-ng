@@ -7,5 +7,7 @@
 set -o nounset -o pipefail -o errexit
 
 make clean-tests
-make test-debops-tools test-debops-ansible_plugins
+# Disable debops script testing for now, until new unit tests are developed
+#make test-debops-tools test-debops-ansible_plugins
+make test-debops-ansible_plugins
 make check
